@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<is:map xmlns:is="http://moodle.eside.deusto.es" cities="9">
+	<is:distribution>
+		<is:start name="S" x="1" y="4"/>
+		<is:end name="Z" x="15" y="5"/>
+		<is:city name="A" x="3" y="2"/>
+		<is:city name="B" x="3" y="7"/>
+		<is:city name="C" x="6" y="4"/>
+		<is:city name="D" x="7" y="1"/>
+		<is:city name="E" x="11" y="1"/>
+		<is:city name="F" x="11" y="7"/>
+		<is:city name="G" x="12" y="3"/>
+	</is:distribution>
+</is:map>
