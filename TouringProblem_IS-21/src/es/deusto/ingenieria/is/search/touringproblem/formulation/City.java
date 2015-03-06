@@ -13,6 +13,7 @@ public class City {
 	private int y;
 	private List<City> ciudadesAccesibles = new ArrayList<City>();
 	//lista ciudades para costes
+	//HOLA :D
 	
 	//metodo que lo inicialice
 	
