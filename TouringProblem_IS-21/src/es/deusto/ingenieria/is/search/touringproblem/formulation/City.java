@@ -1,5 +1,8 @@
 package es.deusto.ingenieria.is.search.touringproblem.formulation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  *  Clase Ciudad con los atributos nombre y la posicion mediante x e y
  */
@@ -8,8 +11,10 @@ public class City {
 	private String name;
 	private int x;
 	private int y;
-	//private List<City> ciudadesAccesibles = new ArrayList<City>();
+	private List<City> ciudadesAccesibles = new ArrayList<City>();
+	//lista ciudades para costes
 	
+	//metodo que lo inicialice
 	
 	public City(String name, int x, int y) {
 		super();

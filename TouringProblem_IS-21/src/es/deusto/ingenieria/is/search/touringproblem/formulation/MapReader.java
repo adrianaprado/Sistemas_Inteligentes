@@ -15,6 +15,7 @@ public class MapReader extends StateXMLReader{
 	 * Atributos para almacenar los datos del xml
 	 */
 	private String name;
+	@SuppressWarnings("unused")
 	private int x,y,cities;
 	private static List<City> lcities =  new ArrayList<City>();
 	
