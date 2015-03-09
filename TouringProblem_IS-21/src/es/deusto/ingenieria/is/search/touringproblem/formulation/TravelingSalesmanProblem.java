@@ -29,7 +29,6 @@ public class TravelingSalesmanProblem extends Problem {
 	
 	private void createOperators(){
 		this.addOperator(new AddCity());
-		this.addOperator(new MoveTo());
 	}
 		
 	public static void main (String[]args){

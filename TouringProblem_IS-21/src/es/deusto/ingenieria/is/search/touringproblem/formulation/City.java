@@ -61,5 +61,17 @@ public class City {
 			return false;
 		}
 	}
+	
+	public Object clone() {
+		Object clon = null;
+		
+		try {
+			clon = super.clone();			
+		} catch (CloneNotSupportedException e) {
+			System.err.println("% [ERROR] Room.clone(): " + e.getMessage());
+		}
+		
+		return clon;		
+	}
 
 }
