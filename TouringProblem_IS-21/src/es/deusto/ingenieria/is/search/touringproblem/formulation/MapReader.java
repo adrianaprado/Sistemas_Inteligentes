@@ -55,6 +55,6 @@ public class MapReader extends StateXMLReader{
 	@Override
 	public State getState() {
 		// TODO Auto-generated method stub
-		return new EnviromentMap(lcities);
+		return new EnvironmentMap(lcities);
 	}
 }

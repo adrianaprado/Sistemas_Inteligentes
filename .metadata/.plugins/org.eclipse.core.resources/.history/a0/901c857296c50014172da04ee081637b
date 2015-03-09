@@ -1,0 +1,25 @@
+package es.deusto.ingenieria.is.search.touringproblem.formulation;
+
+import es.deusto.ingenieria.is.search.formulation.Operator;
+import es.deusto.ingenieria.is.search.formulation.State;
+
+public class AddCity extends Operator{
+
+	@Override
+	protected State effect(State arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected boolean isApplicable(State arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

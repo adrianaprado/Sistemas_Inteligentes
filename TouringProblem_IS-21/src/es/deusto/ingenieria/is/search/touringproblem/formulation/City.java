@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- *  Clase Ciudad con los atributos nombre y la posicion mediante x e y
+ *  Clase Ciudad con los atributos nombre, lista de ciudades accesibles y la posicion mediante x e y
  */
 public class City {
 	
@@ -13,7 +13,6 @@ public class City {
 	private int y;
 	private List<City> ciudadesAccesibles = new ArrayList<City>();
 	//lista ciudades para costes
-	//HOLA :D
 	
 	//metodo que lo inicialice
 	
@@ -47,10 +46,20 @@ public class City {
 	}
 	
 	/*
-	 * Método toString que devuelve un String con los datos de la ciudad 
+	 * Metodo toString que devuelve un String con los datos de la ciudad 
 	 */
 	public String toString(){
 		return "City:"+name+" 	 x:"+x+" 	y:"+y;
+	}
+	
+	//Metodo equals para comparar ciudades
+	public boolean equals(Object obj){
+		if(obj != null && obj instanceof City && ((City)obj).name.equals(this.name)
+				&& ((City)obj).x == this.x && ((City)obj).y == this.y)
+			return true;
+		else{
+			return false;
+		}
 	}
 
 }

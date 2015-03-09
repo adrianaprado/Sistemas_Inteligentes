@@ -1,5 +1,5 @@
 package es.deusto.ingenieria.is.search.touringproblem;
-import es.deusto.ingenieria.is.search.touringproblem.formulation.EnviromentMap;
+import es.deusto.ingenieria.is.search.touringproblem.formulation.EnvironmentMap;
 import es.deusto.ingenieria.is.search.touringproblem.formulation.TravelingSalesmanProblem;
 
 
@@ -24,7 +24,7 @@ public class MainProgram{
 		 * Mostramos por pantalla que la lista de EnviromentMap recibe todas las ciudades
 		 * del xml
 		 */
-		System.out.println(new EnviromentMap(EnviromentMap.cities).toString());
+		System.out.println(new EnvironmentMap(EnvironmentMap.cities).toString());
 		
 	}
 
