@@ -5,11 +5,27 @@ import es.deusto.ingenieria.is.search.formulation.State;
 
 public class AddCity extends Operator{
 
+	private City city;
+	
+	public AddCity(City city) {
+		this.city = city;
+		
+		// Donde pone el 1d, tenemos que poner el coste que supone mover esa ciudad 
+		//super("Add City", 1d);
+	}
+	
 	@Override
 	protected boolean isApplicable(State state) {
 		// TODO Auto-generated method stub
 		EnvironmentMap environment = (EnvironmentMap) state;
-		return false;
+		
+		//Comprobación de si una ciudad está en la lista parcial de ciudades visitadas
+		
+		if(environment.cities.equals(city)){
+			return true;
+		}else{
+			return false;
+		}
 	}
 	
 	@Override
@@ -19,10 +35,10 @@ public class AddCity extends Operator{
 
 		//Codigo del efecto que tendria el añadir una nueva ciudad a la lista
 		
-		/*if (newEnvironmentMap.getRobotLocation().equals(Location.LEFT)) {
-			newEnvironmentMap.getLeftRoom().clean();
-		} else {
-			newEnvironmentMap.getRightRoom().clean();
+		/*if(environment.cities.equals(city)){
+			return true;
+		}else{
+			return false;
 		}*/
 		
 		return newEnvironmentMap;
